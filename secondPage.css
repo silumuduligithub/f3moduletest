@@ -1,0 +1,95 @@
+#header {
+  height: 24vh;
+  width: 100vw;
+  background-color: black;
+}
+.ipa {
+  color: #5c5e66;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 43px;
+  padding-top: 15px;
+}
+
+.Font-design {
+  color: white;
+}
+#loc {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #b8bccc;
+}
+#moreInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 43px;
+  background-color: black;
+}
+#footer {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-top: 5vh;
+}
+#footer > p {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #b8bccc;
+}
+#footer > div>input {
+  width: 75vw;
+  height: 50px;
+  border: 1px solid white;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.row {
+  width: 100vw;
+  height: fit-content;
+  padding-inline: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  gap: 5vw;
+  padding-top: 5vh;
+}
+.col1 {
+  flex: 1;
+  background-color: #575a85;
+  height: 250px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.font {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #B8BCCC;
+}

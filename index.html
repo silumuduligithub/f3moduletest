@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F3 module test</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+
+      $.getJSON("https://api.ipify.org?format=json", function (data) {
+        // Setting text of element P with id gfg
+        localStorage.setItem("ipAddress", data.ip);
+        $("#p").html('Your Current IP Address is ' + data.ip);
+      });
+    </script>
+  </head>
+  <body>
+    <section class="d-flex" id="hero-section">
+      <div id="first-container">
+        <h1>Post Office Application.</h1>
+        <p>
+          This Application Allows you to extract information about the nearest
+          Post Offices, based on your location.
+        </p>
+        <img src="./images/herosection.png">
+      </div>
+      <div id="second-container">
+        <p id="p"></p>
+        <button onclick="location.href='secondPage.html'">Get Started</button>
+      </div>
+    </section>
+  </body>
+</html>
